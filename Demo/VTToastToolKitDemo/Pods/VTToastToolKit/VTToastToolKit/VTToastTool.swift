@@ -7,9 +7,10 @@
 //
 
 import UIKit
-public class VTToastTool: NSObject {
+class VTToastTool: NSObject {
     /**
      通过VTPopupBaseView单例展示指定视图
+     
      - parameter contenView:  需要展示的视图
      - returns:    Void
      */

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CartAlertView" customModule="SDToastToolDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd2-W0-7NY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-pN-b1I">
+                    <rect key="frame" x="0.0" y="130" width="160" height="50"/>
+                    <color key="backgroundColor" red="0.77650821209999998" green="0.77649128440000004" blue="0.77649468180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vhn-da-hba"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="sureBtn" destination="iN0-l3-epB" eventType="touchUpInside" id="PfR-r5-mXA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-2h-wZa">
+                    <rect key="frame" x="160" y="130" width="160" height="50"/>
+                    <color key="backgroundColor" red="0.90167176719999997" green="0.6128351688" blue="0.21545760329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="确认提交"/>
+                    <connections>
+                        <action selector="canclebtn" destination="iN0-l3-epB" eventType="touchUpInside" id="UJR-ld-R04"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jpi-0v-fph">
+                    <rect key="frame" x="102" y="50" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cYV-pN-b1I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Zn-6s-KNC"/>
+                <constraint firstAttribute="trailing" secondItem="hcj-2h-wZa" secondAttribute="trailing" id="2ld-dd-VDF"/>
+                <constraint firstAttribute="bottom" secondItem="hcj-2h-wZa" secondAttribute="bottom" id="BEh-le-rhz"/>
+                <constraint firstItem="Nd2-W0-7NY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jha-ND-gRN"/>
+                <constraint firstItem="hcj-2h-wZa" firstAttribute="top" secondItem="Nd2-W0-7NY" secondAttribute="bottom" id="OKq-i5-IAR"/>
+                <constraint firstAttribute="trailing" secondItem="Nd2-W0-7NY" secondAttribute="trailing" id="Q4I-kO-yQ1"/>
+                <constraint firstItem="hcj-2h-wZa" firstAttribute="leading" secondItem="cYV-pN-b1I" secondAttribute="trailing" id="acs-Ih-leY"/>
+                <constraint firstItem="hcj-2h-wZa" firstAttribute="width" secondItem="cYV-pN-b1I" secondAttribute="width" id="cQl-FX-eNQ"/>
+                <constraint firstItem="Nd2-W0-7NY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gZw-tW-6YZ"/>
+                <constraint firstAttribute="bottom" secondItem="cYV-pN-b1I" secondAttribute="bottom" id="mlQ-PT-rMX"/>
+                <constraint firstItem="hcj-2h-wZa" firstAttribute="height" secondItem="cYV-pN-b1I" secondAttribute="height" id="xPY-F5-2F7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBtn" destination="hcj-2h-wZa" id="1aA-l5-bx9"/>
+                <outlet property="nameLable" destination="Nd2-W0-7NY" id="ba8-do-mXe"/>
+                <outlet property="surebtn" destination="cYV-pN-b1I" id="vnb-bb-M5J"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="251"/>
+        </view>
+    </objects>
+</document>

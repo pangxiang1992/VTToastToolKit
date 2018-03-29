@@ -1,0 +1,6 @@
+framework module VTToastToolKit {
+  umbrella header "VTToastToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
