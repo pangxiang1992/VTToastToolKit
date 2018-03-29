@@ -8,8 +8,6 @@
 
 import UIKit
 
-typealias ClearClosure = ()->Void
-
 class VTPopupBaseView: UIView {
     private var contentView: UIView!
     private var backgroundView: UIView!

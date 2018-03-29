@@ -13,9 +13,7 @@ class CartAlertView: UIView {
     }
     @IBAction func canclebtn() {
         //SDToastTool.dissmissPopupView()
-        VTToastTool.dissmissWithCallback {
-            print("cancleBtn")
-        }
+        VTToastTool.dissmissPopupView()
         
     }
     
@@ -23,7 +21,7 @@ class CartAlertView: UIView {
     @IBOutlet weak var surebtn: UIButton!
     @IBAction func sureBtn() {
         //SDToastTool.dissmissPopupView()
-        VTToastTool.dissmissWithCallback {
+        VTToastTool.dissmissPopupViewWithCallback {
             print("sureBtn")
         }
     }
