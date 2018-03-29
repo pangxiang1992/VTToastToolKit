@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VTToastToolKit"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "自定义的弹窗"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/pangxiang1992/VTToastToolKit.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/pangxiang1992/VTToastToolKit.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
